@@ -1,0 +1,134 @@
+body{
+    background-color: #f9fadd;
+}
+.close-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.close-button {
+    font-size: 24px;
+    color: #264653;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #f1f1f1;
+    color: #2a9d8f;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    max-width: 700px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    color: #264653;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #264653;
+    margin-top: 20px;
+}
+
+form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #264653;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f1f1f1;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #2a9d8f;
+    background-color: #fff;
+}
+
+.botao {
+    width: 100%;
+    background-color: #2a9d8f;
+    color: white;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #264653;
+    transform: scale(1.05);
+}
+
+.resultados {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#resultado-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resultado-list li {
+    background-color: #f9fadd;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #2a9d8f;
+}
+
+.contato {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.contato ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contato ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contato strong {
+    color: #2a9d8f;
+    font-weight: bold;
+}

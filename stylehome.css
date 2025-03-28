@@ -1,0 +1,146 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9fadd;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.header {
+  text-align: center;
+  background-color: #ff9800;
+  color: white;
+  padding: 20px 0;
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+}
+
+h1 {
+  font-size: 3em;
+}
+.header p {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+.content {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.intro h2, .navigation h3, .localizacao h3 {
+  color: #ff9800;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.intro p, .localizacao p, .imagem p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.botao {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao a {
+  text-decoration: none;
+  color: white;
+}
+
+.botao:hover {
+  background-color: #007506;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+
+a {
+  color: #4caf50;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .logo-title {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    max-width: 80px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+  .content {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .intro h2, .navigation h3, .localizacao h3 {
+    font-size: 1.6em;
+  }
+
+  .intro p, .localizacao p, .imagem p {
+    font-size: 1em;
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botao {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
