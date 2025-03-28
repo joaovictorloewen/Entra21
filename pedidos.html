@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos - Produtos Artesanais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero-section {
+            background-color: #1f4d5c;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #1f4d5c;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .order-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-form input,
+        .order-form select,
+        .order-form button {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .order-form label {
+            font-weight: bold;
+        }
+
+        .btn-custom {
+            background-color: #1f4d5c;
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #155e5c;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .form-footer a {
+            color: #1f4d5c;
+            font-weight: bold;
+        }
+
+        .product-prices {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .btn-back {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="hero-section">
+        <div class="container">
+            <h1>Faça Seu Pedido</h1>
+            <p>Escolha os produtos artesanais que deseja comprar, preencha suas informações e finalize seu pedido.</p>
+        </div>
+    </div>
+
+    <div class="container my-5 form-container">
+        <h2 class="section-title">Formulário de Pedido</h2>
+        <div class="order-form">
+            <form action="processar_pedido.php" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="produto">Selecione o Produto</label>
+                    <select class="form-select" id="produto" name="produto" required>
+                        <option value="geleias">Geleias Artesanais - R$ 20,00</option>
+                        <option value="conservas">Conservas Caseiras - R$ 15,00</option>
+                        <option value="queijos">Queijos Artesanais - R$ 25,00</option>
+                        <option value="outro">Outro Produto - Consulte preço</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" class="form-control" id="quantidade" name="quantidade" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço de Entrega</label>
+                    <input type="text" class="form-control" id="endereco" name="endereco" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                </div>
+                <button type="submit" class="btn-custom">Finalizar Pedido</button>
+            </form>
+        </div>
+
+        <div class="form-footer">
+            <p>Já tem uma conta? <a href="indexentrar.html">Entre aqui</a></p>
+            <p>Se ainda não é cadastrado, <a href="indexcadastro.html">Cadastre-se</a></p>
+        </div>
+
+        <!-- Botão de Voltar -->
+        <div class="text-center mt-4">
+            <a href="indexhome.html" class="btn-back">Voltar à Página Inicial</a>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <p><strong>Para mais informações ou dúvidas, entre em contato:</strong></p>
+        <p><strong>Telefone:</strong> (11) 98765-4321</p>
+        <p><strong>E-mail:</strong> contato@produtosartesanais.com.br</p>
+    </div>
+
+</body>
+
+</html>
