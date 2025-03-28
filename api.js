@@ -1,8 +1,35 @@
+function validarFormulario(event) {
+    event.preventDefault();
+
+    let nome = document.getElementById("nome").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let idade = document.getElementById("idade").value.trim();
+    let telefone = document.getElementById("telefone").value.trim();
+    let cep = document.getElementById("cep").value.trim();
+
+    if (!nome || !email || !idade || !telefone || !cep) {
+        alert("Preencha todos os campos corretamente!");
+        return false;
+    }
+
+    if (!/^[0-9]{8}$/.test(cep)) {
+        alert("O CEP deve conter exatamente 8 números!");
+        return false;
+    }
+
+    buscarCEP();
+}
+
+function formatarCEP() {
+    let cep = document.getElementById("cep").value;
+    document.getElementById("cep").value = cep.replace(/\D/g, "").slice(0, 8);
+}
+
 function buscarCEP() {
     let cep = document.getElementById("cep").value.trim();
 
-        if (cep.length !== 8 || isNaN(cep)) {
-        alert("Digite um CEP válido com 8 números!");
+    if (cep.length !== 8 || isNaN(cep)) {
+        document.getElementById("resultado").innerHTML = "<p style='color: red;'>CEP inválido!</p>";
         return;
     }
 
