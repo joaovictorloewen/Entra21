@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h2>LocalStotage</h2>
+    <label for="">Informe nome</label>
+    <input type="text" id="nome" placeholder="Ex: Maria" />
+    <button onclick="gravar()">Gravar</button>
+    <hr />
+    <a href="leitura.html">Ler dados</a>
     <script>
         console.log(localStorage.getItem('teste'))
         //let cesta = localStorage.getItem('cesta')
         //console.log(cesta)
 
-        console.log(localStorage.getItem('teste'))
-        let cesta = JSON.parse(localStorage.getItem('cesta'))|| []
-            cesta.map(f => console.log(f))
+        /* console.log(localStorage.getItem('teste'))
+         let cesta = JSON.parse(localStorage.getItem('cesta'))|| []
+             cesta.map(f => console.log(f))*/
+
+        /* function gravar() {
+            let nome = document.getElementById('nome').value.trim();
+            if (nome === "") return;
+
+            let contatos = localStorage.getItem('contatos');
+
+            try {
+                contatos = JSON.parse(contatos);
+                if (!Array.isArray(contatos)) {
+                    contatos = [];
+                }
+            } catch (e) {
+                contatos = [];
+            }
+
+            contatos.push(nome);
+            localStorage.setItem('contatos', JSON.stringify(contatos));
+            document.getElementById('nome').value = "";
+
+            console.log("Nomes salvos:", contatos);
+        }*/
+
+        function gravar() {
+            //contatos
+            let contatos = JSON.parse(localStorage.getItem('contatos')) || []
+            contatos.push(document.getElementById('nome').value)
+            localStorage.setItem('contatos', JSON.stringify(contatos))
+        }
     </script>
 </body>
+
 </html>
