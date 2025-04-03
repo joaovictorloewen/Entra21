@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function salvarClientes(clientes) {
         localStorage.setItem("clientes", JSON.stringify(clientes));
     }
-
+    
     function listarClientes() {
         clienteLista.innerHTML = "";
         const clientes = carregarClientes();
