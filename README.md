@@ -86,19 +86,14 @@ Laços,
 Funções,
 Estruturas de dados básicas.
 
-🔀 Como Navegar pelas Branches
-📌 No GitHub:
-
-Clique no menu de branches
-
-Selecione o assunto que quer visualizar
-
-
 Este repositório funciona como:
 
 ✔️ Portfólio de aprendizagem
-✔️ Registro completo do conteúdo estudado no Entra21
+
+✔️ Registro do conteúdo estudado no Entra21
+
 ✔️ Base para revisões e estudos
+
 ✔️ Material organizado por temas e projetos
 
 👤 Autor
