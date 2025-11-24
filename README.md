@@ -1,4 +1,4 @@
-📚 Entra21 — Repositório Completo do Curso
+# 📚 Entra21 — Repositório Completo do Curso
 
 Este repositório reúne todo o conteúdo estudado durante o programa Entra21, organizado em branches específicas, onde cada uma representa um tema, projeto ou módulo trabalhado ao longo do curso.
 
